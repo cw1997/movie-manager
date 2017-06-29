@@ -32,7 +32,7 @@
 		</property>
 	</bean>
 	
-	<bean id="abc" class="com.movie.action.IndexAction"
+	<bean id="action" class="com.movie.action.IndexAction"
 		abstract="false" lazy-init="default" autowire="default">
 		<!-- <property name="actionErrors">
 			<null />
