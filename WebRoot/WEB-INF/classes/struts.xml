@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 修改编码格式 -->
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<!-- 启用动态调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<package name="movie" namespace="/" extends="struts-default">
+		<action name="index" class="action" method="index">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="search" class="action" method="search">
+			<result name="success">/index.jsp</result>
+		</action>
+		<!-- <action name="delete" class="action" method="delete">
+			<result name="success" type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="method">index</param>
+			</result>
+		</action>
+		<action name="add" class="action" method="add">
+			<result name="success" type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="method">index</param>
+			</result>
+		</action> -->
+	</package>
+</struts>    
